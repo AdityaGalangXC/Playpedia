@@ -12,7 +12,7 @@
       rel="stylesheet" />
   </head>
   <body>
-    <main class="bg-[url('/assets/background.jpg')]">
+    <main class="bg-[url('/public/assets/background.jpg')]">
       <nav class="sticky flex w-full items-center justify-between px-4 py-4 shadow-sm backdrop-blur-sm">
         <div class="mx-auto mt-1 flex w-full max-w-6xl items-center justify-between text-neutral-100">
           <a class="flex items-center text-xl font-normal" href="#">
@@ -128,34 +128,34 @@
         </div>
       </section>
       <!-- Carousell -->
-      <div id="default-carousel" class="relative w-full z-0" data-carousel="slide">
+      <div id="default-carousel" class="relative z-0 w-full" data-carousel="slide">
         <!-- Carousel wrapper -->
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
           <!-- Item 1 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img
-              src="/assets/158842-final.png"
+              src="/public/assets/158842-final.png"
               class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
               alt="..." />
           </div>
           <!-- Item 2 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img
-              src="/assets/fuhua_2.png"
+              src="/public/assets/fuhua_2.png"
               class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
               alt="..." />
           </div>
           <!-- Item 3 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img
-              src="/assets/158810-final.jpg"
+              src="/public/assets/158810-final.jpg"
               class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
               alt="..." />
           </div>
           <!-- Item 4 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img
-              src="/assets/158852-final.png"
+              src="/public/assets/158852-final.png"
               class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
               alt="..." />
           </div>
@@ -398,7 +398,7 @@
         </div>
       </div>
       <!-- Container untuk toast -->
-      <div class="fixed inset-x-0 top-4 ml-10 flex z-10">
+      <div class="fixed inset-x-0 top-4 z-10 ml-10 flex">
         <!-- Toast -->
         <div
           id="toast-message-cta"
@@ -443,13 +443,15 @@
       <div class="mx-auto max-w-6xl px-4 py-5 backdrop-blur-md">
         <!-- Progress Buku Tamu -->
         <div class="mb-8">
-            <div class="flex justify-between mb-1">
-                <span class="text-base font-medium text-blue-700 dark:text-white">Buku Tamu</span>
-                <span class="text-sm font-medium text-blue-700 dark:text-white">20%</span>
-            </div>
-            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                <div class="bg-blue-600 h-2.5 rounded-full progress-bar-striped progress-bar-animated" style="width: 20%"></div>
-            </div>
+          <div class="mb-1 flex justify-between">
+            <span class="text-base font-medium text-blue-700 dark:text-white">Buku Tamu</span>
+            <span class="text-sm font-medium text-blue-700 dark:text-white">20%</span>
+          </div>
+          <div class="h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
+            <div
+              class="progress-bar-striped progress-bar-animated h-2.5 rounded-full bg-blue-600"
+              style="width: 20%"></div>
+          </div>
         </div>
 
         <!-- Progress Responsif -->
@@ -458,9 +460,11 @@
             <span class="text-base font-medium text-blue-700 dark:text-white">Responsif</span>
             <span class="text-sm font-medium text-blue-700 dark:text-white">25%</span>
           </div>
-          <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-            <div class="bg-blue-600 h-2.5 rounded-full progress-bar-striped progress-bar-animated" style="width: 25%"></div>
-        </div>
+          <div class="h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
+            <div
+              class="progress-bar-striped progress-bar-animated h-2.5 rounded-full bg-blue-600"
+              style="width: 25%"></div>
+          </div>
         </div>
 
         <!-- Tech Stack Alert -->
@@ -471,6 +475,6 @@
       </div>
     </main>
     <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script src="/js/dom.js"></script>
+    <script src="../public/js/dom.js"></script>
   </body>
 </html>
