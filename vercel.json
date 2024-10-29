@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "routes": [
+      {
+        "src": "/",
+        "dest": "/src/index.html"
+      },
+      {
+        "src": "/about",
+        "dest": "/src/about.html"
+      },
+      {
+        "src": "/x7k9m2",
+        "dest": "/src/kontak.html"
+      },
+      {
+        "handle": "filesystem"
+      }
+    ]
+  }
