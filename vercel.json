@@ -1,14 +1,8 @@
 {
     "version": 2,
     "builds": [
-      {
-        "src": "src/index.html",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "public/**/*",
-        "use": "@vercel/static"
-      }
+      { "src": "src/index.html", "use": "@vercel/static" },
+      { "src": "public/**/*", "use": "@vercel/static" }
     ],
     "routes": [
       {
@@ -22,6 +16,14 @@
       {
         "src": "/x7k9m2",
         "dest": "/src/kontak.html"
+      },
+      {
+        "src": "/assets/(.*)",
+        "dest": "/public/assets/$1"
+      },
+      {
+        "src": "/js/(.*)",
+        "dest": "/public/js/$1"
       },
       {
         "handle": "filesystem"
